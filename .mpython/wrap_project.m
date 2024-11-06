@@ -9,6 +9,8 @@ mpython_url = 'https://github.com/MPython-Package-Factory/mpython.git';
 [cpath, ~, ~] = fileparts(mfilename('fullpath'));
 python_package_path = fullfile(cpath, '..'); 
 
+restoredefaultpath; 
+
 cd(cpath);
 
 mkdir('external');
@@ -28,7 +30,6 @@ end
 
 cd('..'); 
 
-restoredefaultpath; 
 addpath(fullfile(cpath, 'external', 'mpython'));
 addpath(fullfile(cpath, 'external', matlab_project_name));
 
