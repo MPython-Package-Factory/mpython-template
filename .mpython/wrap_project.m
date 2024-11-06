@@ -1,4 +1,5 @@
-function wrap_example_project
+function wrap_project
+
 
 python_package_name = 'example_project'; 
 matlab_project_url  = 'https://github.com/MPython-Package-Factory/example-project-matlab.git'; 
